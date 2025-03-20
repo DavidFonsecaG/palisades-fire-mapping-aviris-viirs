@@ -2,3 +2,6 @@ earthaccess
 matplotlib
 numpy
 h5py
+tqdm
+jupyterlab
+ipywidgets
