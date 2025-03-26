@@ -1,7 +1,37 @@
-# GitHub Codespaces ♥️ Jupyter Notebooks
+# Mapping Wildfires with AVIRIS Data
 
-Welcome to your shiny new codespace! We've got everything fired up and running for you to explore Python and Jupyter notebooks.
+This project focuses on identifying and mapping burned areas from wildfires using hyperspectral data from NASA's AVIRIS (Airborne Visible/Infrared Imaging Spectrometer) and thermal anomaly data from VIIRS (Visible Infrared Imaging Radiometer Suite). The analysis is performed using Python tools and open-source geospatial libraries.
 
-You've got a blank canvas to work on from a git perspective as well. There's a single initial commit with what you're seeing right now - where you go from here is up to you!
+## 📁 Project Structure
 
-Everything you do here is contained within this one codespace. There is no repository on GitHub yet. If and when you’re ready you can click "Publish Branch" and we’ll create your repository and push up your project. If you were just exploring then and have no further need for this code then you can simply delete your codespace and it's gone forever.
+- `mapping_wildfires.ipynb`: Main analysis notebook for loading, processing, and visualizing wildfire-related remote sensing data.
+- `data/`: Folder containing AVIRIS and VIIRS GeoTIFF files and shapefiles (not included in repo for size reasons).
+- `figures/`: Folder where output plots and maps are saved.
+- `README.md`: Project overview and instructions (this file).
+
+## 🔍 Objectives
+
+- Merge AVIRIS granules to create a continuous mosaic of the affected area.
+- Georeference hyperspectral images using associated latitude and longitude bands.
+- Overlay VIIRS thermal anomaly data to correlate with AVIRIS observations.
+- Visualize the extent of burned areas and assess spectral reflectance differences.
+
+## 📦 Dependencies
+
+Install the required libraries before running the notebook:
+
+```bash
+pip install -r requirements.txt
+```
+
+## 🛰️ Data Sources
+- AVIRIS: https://daac.ornl.gov/AVIRIS/guides/AV3_L1B_RDN.html
+
+## 🗺️ Tools Used
+- Python (Jupyter Notebook)
+- Rasterio & GDAL (for raster data manipulation)
+- GeoPandas (for shapefile processing)
+- Matplotlib (for visualization)
+
+## 👤 Author
+David — Applied Remote Sensing | NASA Open Science Participant

@@ -1,7 +1,6 @@
 earthaccess
+h5py
 matplotlib
 numpy
-h5py
-tqdm
-jupyterlab
-ipywidgets
+scipy
+gdal  # for osgeo
